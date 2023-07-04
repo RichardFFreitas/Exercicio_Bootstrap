@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Exercício</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1110/1110653.png" type="image/x-icon">
+</head>
+<style>
+    body {
+        background-color: rgb(19, 16, 16);
+    }
+
+    header {
+        background-color: gray;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 5000;
+    }
+
+    .navbar a {
+        color: #fff;
+    }
+    section
+    {
+        padding-top: 75px;
+    }
+    h2
+    {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer
+{
+    background-color: gray;
+    color: #fff;
+    padding: 8px 0;
+}
+    h5
+    {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: .5rem;
+    }
+</style>
+
+<body>
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Top games</h1>
+                <button data-bs-toggle="collapse" data-bs-target="#menu" type="button" class="navbar-toggler"><span
+                        class="navbar-toggler-icon"></span></button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link ">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#produtos" class="nav-link">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#promocoes" class="nav-link">Promoções</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrosel -->
+    <section id="inicio">
+        <div class="container  w-100  mt-4">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100 img-fluid"
+                            src="https://cdn1.epicgames.com/9f4875c1b0cf4cf19b28e203fc7aff07/offer/EGS_Brutalopenworldactionadventuregame_BendStudio_S1-2560x1440-fec2937a1bd5f04f2a6321e4e2a2a2ba.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Days Gone</h5>
+                            <p>R$150,00</p>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 img-fluid"
+                            src="https://assetsio.reedpopcdn.com/2a27ecfb903edf6ef53eb75216baa74c2dae190f.webp?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp">
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item ">
+                        <img class="d-block w-100 img-fluid"
+                            src="https://www.injustice.com/storage/media/images/69/Injustice2-THE-FLASH-wallpaper-1920x1080-44.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Injustice 2</h5>
+                            <p>R$250,00</p>
+                        </div>
+                    </div>
+
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                        type="button">
+                        <span class="carousel-control-prev-icon">
+                        </span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next"
+                        type="button">
+                        <span class="carousel-control-next-icon"></span></button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active"
+                            data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cards -->
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="container">
+            <div class="row mt-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark">
+                        <img src="https://cdn1.epicgames.com/9f4875c1b0cf4cf19b28e203fc7aff07/offer/EGS_Brutalopenworldactionadventuregame_BendStudio_S1-2560x1440-fec2937a1bd5f04f2a6321e4e2a2a2ba.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Day's Gone</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://assetsio.reedpopcdn.com/2a27ecfb903edf6ef53eb75216baa74c2dae190f.webp?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Street Fighter 6</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://www.injustice.com/storage/media/images/69/Injustice2-THE-FLASH-wallpaper-1920x1080-44.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Injustice 2</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="mt-4">
+                </div>
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://images4.alphacoders.com/887/887514.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">A Way Out</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://i0.wp.com/www.portaldonerd.com.br/wp-content/uploads/2018/07/unravel-2-4320x2620-e3-2018-platform-games-4k-14401.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Unravel Two</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://viciados.net/wp-content/uploads/2020/06/Dying-Light-2-Techland-e-Koch-Media-collaborano-per-la-distribuzione-in-Europa.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Dying Light 2</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?
+                            </p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    </section>
+
+    <section id="promocoes">
+        <h2>Promoções</h2>
+        <div class="container">
+            <div class="row mt-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark">
+                        <img src="https://cdn1.epicgames.com/9f4875c1b0cf4cf19b28e203fc7aff07/offer/EGS_Brutalopenworldactionadventuregame_BendStudio_S1-2560x1440-fec2937a1bd5f04f2a6321e4e2a2a2ba.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Day's Gone</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://assetsio.reedpopcdn.com/2a27ecfb903edf6ef53eb75216baa74c2dae190f.webp?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Street Fighter 6</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://www.injustice.com/storage/media/images/69/Injustice2-THE-FLASH-wallpaper-1920x1080-44.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Injustice 2</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="mt-4">
+                </div>
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://images4.alphacoders.com/887/887514.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">A Way Out</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://i0.wp.com/www.portaldonerd.com.br/wp-content/uploads/2018/07/unravel-2-4320x2620-e3-2018-platform-games-4k-14401.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Unravel Two</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?</p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 text-bg-dark rounded-top-10">
+                        <img src="https://viciados.net/wp-content/uploads/2020/06/Dying-Light-2-Techland-e-Koch-Media-collaborano-per-la-distribuzione-in-Europa.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Dying Light 2</h4>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel impedit voluptatibus, eveniet facere iste reiciendis odio illo, sed ut numquam eum optio esse dolores deleniti libero exercitationem illum eligendi?
+                            </p>
+                            <a href="#" class="btn btn-primary">Compre agora</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h5>
+                &copy;Top Games - Todos os direitos reservados - 2023
+            </h5>
+        </div>
+    </footer>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
